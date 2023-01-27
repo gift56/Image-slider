@@ -51,3 +51,5 @@ body {
 .button:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+#slider-span1:target ~ .imageSlider #img1 {
+}
