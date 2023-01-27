@@ -20,7 +20,18 @@ body {
   display: flex;
   align-items: center;
   min-height: 85vh;
+  width: 100%;
+  overflow: hidden;
 }
+
+.imageSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+  width: 100%;
+}
+
 @media screen and (min-width: 999px) {
   body {
     overflow: hidden;
@@ -28,9 +39,7 @@ body {
   }
 
   .imageSliderContainer {
-    width: 100%;
     padding: 0;
-    overflow: hidden;
     height: 85vh;
   }
   #slider-span1:target ~ .imageSlider {
@@ -57,10 +66,6 @@ body {
     height: 600px;
     position: absolute;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.7s;
   }
   .slider-div {
     display: flex;
