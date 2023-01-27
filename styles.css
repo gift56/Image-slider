@@ -100,3 +100,22 @@ body {
   background: transparent;
   filter: saturate(100%);
 }
+
+#slider-span1:target ~ .imageSlider {
+  left: 70%;
+}
+#slider-span2:target ~ .imageSlider {
+  left: 50%;
+}
+#slider-span3:target ~ .imageSlider {
+  left: 25%;
+}
+#slider-span5:target ~ .imageSlider {
+  left: -25%;
+}
+#slider-span1:target ~ .imageSlider {
+  left: -50%;
+}
+#slider-span1:target ~ .imageSlider {
+  left: -70%;
+}
