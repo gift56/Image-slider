@@ -3,118 +3,140 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
   background-color: #202130ee;
 }
-.imageSliderContainer {
-  width: 100%;
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-.imageSlider {
-  width: 100%;
-  height: 600px;
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.7s;
-}
-.slider-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 30px 0 30px;
-}
+
 .img {
-  position: relative;
-  width: 240px;
-  height: 370px;
-  transition: 0.7s;
-  filter: saturate(10%);
+  width: 100%;
 }
-.button {
-  position: absolute;
-  width: 240px;
-  height: 370px;
-  background: rgba(0, 0, 0, 0.4);
+.imageSliderContainer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  min-height: 85vh;
 }
-.button:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-#slider-span1:target ~ .imageSlider #img1,
-#slider-span1:target ~ .imageSlider #button-1 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
-}
-#slider-span2:target ~ .imageSlider #img2,
-#slider-span2:target ~ .imageSlider #button-2 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
-}
-#slider-span3:target ~ .imageSlider #img3,
-#slider-span3:target ~ .imageSlider #button-3 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
-}
-#slider-span4:target ~ .imageSlider #img4,
-#slider-span4:target ~ .imageSlider #button-4 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
-}
-#slider-span5:target ~ .imageSlider #img5,
-#slider-span5:target ~ .imageSlider #button-5 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
-}
-#slider-span6:target ~ .imageSlider #img6,
-#slider-span6:target ~ .imageSlider #button-6 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
-}
-#slider-span7:target ~ .imageSlider #img7,
-#slider-span7:target ~ .imageSlider #button-7 {
-  width: 380px;
-  height: 500px;
-  background: transparent;
-  filter: saturate(100%);
+@media screen and (min-width: 999px) {
+  body {
+    overflow: hidden;
+  }
+
+  .imageSliderContainer {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  #slider-span1:target ~ .imageSlider {
+    left: 70%;
+  }
+  #slider-span2:target ~ .imageSlider {
+    left: 50%;
+  }
+  #slider-span3:target ~ .imageSlider {
+    left: 25%;
+  }
+  #slider-span5:target ~ .imageSlider {
+    left: -25%;
+  }
+  #slider-span6:target ~ .imageSlider {
+    left: -50%;
+  }
+  #slider-span7:target ~ .imageSlider {
+    left: -70%;
+  }
+
+  .imageSlider {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+  }
+  .slider-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 30px;
+  }
+  .img {
+    position: relative;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    filter: saturate(10%);
+  }
+  .button {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .button:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  #slider-span1:target ~ .imageSlider #img1,
+  #slider-span1:target ~ .imageSlider #button-1 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
+  #slider-span2:target ~ .imageSlider #img2,
+  #slider-span2:target ~ .imageSlider #button-2 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
+  #slider-span3:target ~ .imageSlider #img3,
+  #slider-span3:target ~ .imageSlider #button-3 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
+  #slider-span4:target ~ .imageSlider #img4,
+  #slider-span4:target ~ .imageSlider #button-4 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
+  #slider-span5:target ~ .imageSlider #img5,
+  #slider-span5:target ~ .imageSlider #button-5 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
+  #slider-span6:target ~ .imageSlider #img6,
+  #slider-span6:target ~ .imageSlider #button-6 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
+  #slider-span7:target ~ .imageSlider #img7,
+  #slider-span7:target ~ .imageSlider #button-7 {
+    width: 380px;
+    height: 500px;
+    background: transparent;
+    filter: saturate(100%);
+  }
 }
 
-#slider-span1:target ~ .imageSlider {
-  left: 70%;
-}
-#slider-span2:target ~ .imageSlider {
-  left: 50%;
-}
-#slider-span3:target ~ .imageSlider {
-  left: 25%;
-}
-#slider-span5:target ~ .imageSlider {
-  left: -25%;
-}
-#slider-span6:target ~ .imageSlider {
-  left: -50%;
-}
-#slider-span7:target ~ .imageSlider {
-  left: -70%;
+@media screen and (max-width: 998px) {
+  .imageSlider {
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+  }
 }
