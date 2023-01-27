@@ -29,3 +29,25 @@ body {
   align-items: center;
   transition: 0.7s;
 }
+.slider-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+.img {
+  position: relative;
+  width: 240px;
+  height: 370px;
+  transition: 0.7s;
+  filter: saturate(10%);
+}
+.button {
+  position: absolute;
+  width: 240px;
+  height: 370px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
