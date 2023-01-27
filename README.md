@@ -1,3 +1,3 @@
 # Image-slider
 
-##### Live demo 
+##### Live demo  <a></a>
