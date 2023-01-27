@@ -11,6 +11,6 @@ body {
   background-color: black;
   overflow: hidden;
 }
-.imageSliderContainer{
-    
+.imageSliderContainer {
+  width: 100%;
 }
