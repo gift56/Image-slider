@@ -113,9 +113,9 @@ body {
 #slider-span5:target ~ .imageSlider {
   left: -25%;
 }
-#slider-span1:target ~ .imageSlider {
+#slider-span6:target ~ .imageSlider {
   left: -50%;
 }
-#slider-span1:target ~ .imageSlider {
+#slider-span7:target ~ .imageSlider {
   left: -70%;
 }
