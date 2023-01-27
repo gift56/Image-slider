@@ -1,3 +1,3 @@
 # Image-slider
 
-##### Live demo  <a></a>
+##### Live demo  <a href=""></a>
