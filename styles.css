@@ -8,6 +8,10 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   align-items: center;
   background-color: #202130ee;
 }
@@ -24,12 +28,14 @@ body {
 @media screen and (min-width: 999px) {
   body {
     overflow: hidden;
+    height: 100vh;
   }
 
   .imageSliderContainer {
     width: 100%;
     padding: 0;
     overflow: hidden;
+    height: 85vh;
   }
   #slider-span1:target ~ .imageSlider {
     left: 70%;
